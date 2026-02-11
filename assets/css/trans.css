@@ -1,0 +1,51 @@
+/*TOPO*/
+.topo  {
+    font-size: 2rem; /* Aumenta o tamanho da fonte do logo */
+    font-weight: bold; /* Deixa o texto do logo em negrito */
+    /* Adiciona um efeito de transição suave para o logo */
+    animation: descerLogo .5s ease-out forwards; /* Aplica a animação de descida do logo */
+}
+.topo img{
+    animation: descerLogo 1.5s ease-out forwards; /* Aplica a animação de surgimento do logo */
+}
+/* Define a animação de descida do logo */
+@keyframes descerLogo {
+    0% {
+        transform: translateY(-100px); /* Começa com o logo acima da tela */
+        opacity: 0; /* Começa com o logo invisível */
+    }
+    100% {
+        transform: translateY(0); /* Termina com o logo em sua posição original */
+        opacity: 1; /* Termina com o logo totalmente visível */
+    }
+}
+
+/* APRESENTAÇÃO */
+.foto-bruno{
+    animation: surgirFoto 2s ease-out forwards; /* Aplica a animação de surgimento da foto */
+    opacity: 0; /* Define a opacidade inicial da foto como 0 */
+}
+
+.nome-bruno, .trabalho-bruno{
+    animation: aparecerNome 1s ease-out 1.5s forwards; /* 1.5 é atraso delay */
+    opacity: 0; /* Define a opacidade inicial do nome como 0 */
+}
+
+/* animação da foto */
+@keyframes surgirFoto {
+    0% {
+        transform: translateY(-50px); /* Começa com a foto um pouco abaixo da posição final */
+        opacity: 0; /* Começa com a foto invisível */
+    }
+    100% {
+        transform: translateY(0); /* Termina com a foto em sua posição original */
+        opacity: 1; /* Termina com a foto totalmente visível */
+    }
+}
+
+/* animação do nome */ 
+@keyframes aparecerNome {
+    to {
+        opacity: 1;
+    }
+}

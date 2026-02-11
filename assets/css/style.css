@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap');
+
+
+body{
+    background-image: url(/fundo.png);
+}
+
+/* topo */
+.topo{
+    display: flex; /* Utiliza flexbox para layout */   
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: flex-start;    /* Alinha os itens verticalmente ao topo */
+    padding: 20px 40px; /* Adiciona espaçamento interno */
+    position: fixed; /* Fixa o topo no lugar */
+    width: 100%; /* Garante que o topo ocupe toda a largura da tela */
+    top: 0; /* Posiciona o topo no topo da página */
+    z-index: 10; /* Garante que o topo fique acima de outros elementos */
+
+}
+
+.logo img{
+    width: 50px; /* Define a largura do logo */
+    height: 50px; /* Define a altura do logo */
+    object-fit: cover; /* Garante que a imagem mantenha sua proporção e preencha o espaço definido */
+    animation: surgirLogo 2s ease-out forwards; /* Aplica a animação de surgimento do logo */
+    opacity: 1; /* Define a opacidade inicial do logo como 0 */
+    border-radius: 50%; /* Deixa o logo com formato circular */
+}
+
+
+
+a{
+    color: #ffffff;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin: 0 10px; /* Adiciona espaçamento entre os links */
+    font-size: 0.6rem; /* Define um tamanho de fonte menor para os links */
+    text-transform: uppercase; /* Transforma o texto dos links para maiúsculas */
+    display: block; /* Faz os links se comportarem como blocos para facilitar o espaçamento */
+    text-align: left; /* Alinha os links à esquerda */
+}
+
+.sociais a{ 
+    color: #c8c8c8;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin: 0 10px; /* Adiciona espaçamento entre os links */
+    font-size: 0.6rem; /* Define um tamanho de fonte menor para os links */
+    margin: -0px -25px; /* Compensa o padding para que o topo ocupe toda a largura da tela */
+    
+}
+
+.menu a{
+    color: #c8c8c8;
+    text-decoration: none; /* Remove o sublinhado dos links */
+    margin: 0 10px; /* Adiciona espaçamento entre os links */
+    font-size: 0.6rem; /* Define um tamanho de fonte menor para os links */
+    text-transform: uppercase; /* Transforma o texto dos links para maiúsculas */
+    display: block; /* Faz os links se comportarem como blocos para facilitar o espaçamento */
+    text-align: right; /* Alinha os links à direita */
+    margin: -0px -25px; /* Compensa o padding para que o topo ocupe toda a largura da tela */
+}
+
+/* INICIO */
+.apresentacao{
+    height: 100vh; /* Define a altura da seção para ocupar toda a altura da tela */
+    display: flex; /* Utiliza flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding-top: 3%; /* Adiciona um espaçamento para evitar sobreposição com o topo fixo */
+}
+
+.foto-container{
+    position: relative; /* Define a posição relativa para o container da foto */
+    width: 50%; /* Define a largura da foto */
+    height: 70%; /* Define a altura da foto */
+    overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites do container */
+}
+
+.foto-bruno{
+    width: 100%; /* Faz a imagem ocupar toda a largura do container */
+    height: 100%; /* Faz a imagem ocupar toda a altura do container */
+    object-fit: cover; /* Garante que a imagem mantenha sua proporção e preencha o container */
+    border-radius: 10px; /* Adiciona bordas arredondadas à foto */
+}
+
+.nome-bruno{
+    font-family: "Sedgwick Ave Display", cursive;
+    position: absolute; /* Define a posição absoluta para o nome */
+    bottom: 45px; /* Posiciona o nome 10px acima da borda inferior do container */
+    left: 0px; /* Posiciona o nome no início do container */
+    width: 100%; /* Faz o nome ocupar toda a largura do container */
+    text-align: center; /* Centraliza o texto do nome */
+    font-size: 4rem; /* Define um tamanho de fonte para o nome */
+    padding: 30px 0; /* Adiciona um espaçamento interno ao redor do nome */
+    color: #ffffff; /* Define a cor do texto do nome como branco */
+    text-shadow: 3px 5px 2px #000000, -3px 10px 11px rgba(249, 0, 0, 0.72);
+}
+
+.trabalho-bruno{
+    font-family: "New Rocker", system-ui;
+    position: absolute; /* Define a posição absoluta para o trabalho */
+    bottom: 10px; /* Posiciona o trabalho 10px acima da borda inferior do container */
+    left: 0px; /* Posiciona o trabalho no início do container */
+    width: 100%; /* Faz o trabalho ocupar toda a largura do container */
+    text-align: center; /* Centraliza o texto do trabalho */
+    font-size: 1.5rem; /* Define um tamanho de fonte para o trabalho */
+    padding: 25px 0; /* Adiciona um espaçamento interno ao redor do trabalho */
+    color: #000000; /* Define a cor do texto do trabalho como branco */
+    text-shadow: 1px 1px 1px #ffffff, -3px 10px 11px
+}
+
+/* camisetas */
+.camiseta{
+    height: 100vh; /* Define a altura da seção para ocupar toda a altura da tela */
+    display: flex; /* Utiliza flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #ffffff;
+}
+/* espelhos */
+.espelho{
+    height: 100vh; /* Define a altura da seção para ocupar toda a altura da tela */
+    display: flex; /* Utiliza flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-image: url(/espelho.png);
+    background-color: #1b1b1b;
+}
+/* tatuagens */
+.tatuagem{
+    height: 100vh; /* Define a altura da seção para ocupar toda a altura da tela */
+    display: flex; /* Utiliza flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #000;
+}
+/* contato */
+.contato{
+    height: 100vh; /* Define a altura da seção para ocupar toda a altura da tela */
+    display: flex; /* Utiliza flexbox para layout */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    background-color: #ffd089;
+}
