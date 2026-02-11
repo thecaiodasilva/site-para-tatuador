@@ -8,7 +8,7 @@
 
 
 body{
-    background-image: url(assets/css/fundo.png);
+    background-image: url(assets/imagens/fundo.png);
 }
 
 /* topo */
@@ -148,4 +148,5 @@ a{
     background-color: #ffd089;
 
 }
+
 
